@@ -152,5 +152,8 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+.vscode
+
 data/*
 !data/*.csv
+data/sample_submit.csv
