@@ -431,6 +431,7 @@ nx.draw(G, with_labels=False,  pos=pos, node_size=40, alpha=0.6, width=0.7)
 # Save the figure
 plt.savefig("imgs/train_graph.png")
 # plt.show()
+plt.close()
 
 # %% [markdown]
 # 2. Plot the distribution of number of followers and followees of each node in the training set.
@@ -463,6 +464,7 @@ plt.savefig("imgs/num_followers_followees.png")
 
 # Show the plot
 # plt.show()
+plt.close()
 
 
 # %% [markdown]
@@ -522,6 +524,7 @@ plt.ylabel('Number')
 # Save the figure
 plt.savefig("imgs/num_total_followers_followees.png")
 # plt.show()
+plt.close()
 
 # %% [markdown]
 # ## 3. Data Preparation
@@ -587,6 +590,7 @@ plt.savefig("imgs/distribution_of_labels.png")
 
 # Display the plot
 # plt.show()
+plt.close()
 
 # %% [markdown]
 # 6. Prepare the dataset to train the model
@@ -761,6 +765,7 @@ plt.ylabel('True labels')
 # Save the figure
 plt.savefig("imgs/confusion_matrix.png")
 # plt.show()
+plt.close()
 
 # %%
 fpr, tpr, ths = roc_curve(y_test, y_pred_list)
@@ -773,6 +778,7 @@ plt.legend()
 # Save the figure
 plt.savefig("imgs/roc_curve.png")
 # plt.show()
+plt.close()
 
 # %%
 report = classification_report(y_test, y_pred_list, output_dict=False)
